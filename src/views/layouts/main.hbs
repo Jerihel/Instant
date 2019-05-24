@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/public/images/fondo.png">
+    <meta charset="UTF-8">
+    <title>Instant</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!-- BOOTSTRAP -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-warning">
+      <div class="container">
+        <a class="navbar-brand mx-auto" href="/">
+          <img src="/public/images/fondo.png" alt="Instant" width="60" height="60"><font face="Arial" size="8">Instant</font>
+        </a>
+      </div>
+    </nav>
+
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-8">
+          {{{ body  }}} 
+              <br>
+              <div class="card w-75">
+                <div class="card-body">
+                 <h3 class="card-title"><i class="fas fa-comments fa-1x"></i> Chat Grupal</h3>
+                  <p class="card-text">Chatea con tus amigos de una manera fácil y sencilla
+                  da click en el siguiente botón</p>
+                  <a href="http://localhost:3000/" class="btn btn-success btn-lg btn-block" target="black">Chat</a>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-md-4">
+          {{>stats this}}
+          {{>popular this}}
+          {{>comments this}}
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white">
+      <div class="container p-2">
+        <div class="row">
+          <div class="mx-auto text-center">
+            <p>Instant | &copy; Copyright 2019, Todos los derechos reservados</p>
+            <p>
+              <a href="https://www.facebook.com/instagramES/" target="black">
+                <i class="fab fa-facebook-square fa-2x"></i>
+              </a>
+              <a href="https://twitter.com/instagram" target="black">
+                <i class="fab fa-twitter-square fa-2x" ></i>
+              </a>
+              <a href="https://www.instagram.com/?hl=es-la" target="black">
+              <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://web.telegram.org/" target="black">
+             <i class="fab fa-telegram fa-2x"></i></i>
+              </a>
+              <a href="https://www.whatsapp.com/" target="black">
+              <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="/public/js/scripts.js"></script>
+  </body>
+</html>
